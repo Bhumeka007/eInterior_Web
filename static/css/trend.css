@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #9a9ae1;  
+}
+.navbar-brand {
+    font-size: 700px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Merienda', cursive;
+}
+.bg
+{
+    background: #d6d5d5;  /* fallback for old browsers */
+    height: 50%;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;    
+}
+h1{
+    text-align: center;
+    color: rgb(20, 101, 223);
+    text-shadow:rgba(0, 0, 0, 0.945) 1px 8px 20px ;
+    font-weight: bold;
+
+}
+ .Box
+{
+    background-color: #ffffff00;
+    width: 460px;
+    border-radius: 25px;
+    padding: 17px;
+    margin-left: 35%;
+    margin-top: 50px;
+    box-shadow : rgba(126, 142, 35, 0.945) 5px 10px 20px ;
+    transform: 0.3s;
+    align-items: center;
+    
+} 
+
+.Box:hover{
+    box-shadow : rgba(193, 22, 236, 0.664) 1px 8px 20px ;
+    
+  
+}
+
+/* #trend page */
+.container {
+    min-height: 100vh;
+    min-width: 170vh;
+    border-radius: 25px;
+    background: #948E99;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow : rgba(63, 63, 63, 0.945) 5px 10px 20px 10px ;
+}
+
+ .font-weight-bold
+ {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+ } 
+ 
+
+  .social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  /* .social-link:hover, */
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .progress {
+    height: 10px;
+  }
+/* 
+ nich */
+
+.news p{
+    margin: 0;
+    color: black;
+}
+
+.fa{
+    font-size: 10px;
+    cursor: pointer;
+    padding-right: 6px;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.579);
+    text-align: center;
+    
+}
+.fa:hover
+{
+   color: #12c2e9;  /* fallback for old browsers */
+   transition: 0.5s;
+   font-weight: bold;
+}
+.join
+{
+    color: whitesmoke;
+    font-family: 'Pangolin', cursive;
+}
+.pb-3
+{
+    color: whitesmoke;
+
+}
+.last
+{
+    background-color: rgba(105, 112, 210, 0.237);
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+}
+p{
+    color: #d6d5d5;
+}
