@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>eInterior.com</title>
+        <meta charset="utf-8">
+        <!--link with Css-->
+        <link rel="stylesheet" href="{% static 'css/index.css' %} ">
+        <!--Employ Form link-->
+        <!--End link with Css-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda+One&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lobster+Two:ital@1&family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Italianno&display=swap" rel="stylesheet">
+        <!--Bootstrap Links-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--Counter-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    </head>
+    <body style="background-color: rgba(203, 250, 228, 0.692);">
+        <!--Nav bar start-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand py-2" href="#">
+                <i class="fab fa-pagelines"style="color:white"></i>
+                eInterior
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link pr-3" href="{% url 'Home' %}">Home</a>
+                </li>
+                <!--DECO-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      DECO</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'Room Design' %}">Room Design</a>
+                      <a class="dropdown-item" href="{% url 'Decorate' %}">Decorating</a>
+                      <a class="dropdown-item" href="{% url 'Style' %}">Design Style</a>
+                      <a class="dropdown-item" href="{% url 'Space' %}">Small Space</a>
+                    </div>
+                </li>
+                <!--GARDEN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      GARDEN</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'plants a to z' %}">Plants A to Z</a>
+                      <a class="dropdown-item" href="{% url 'OUT' %}">Outdoor Plants</a>
+                      <a class="dropdown-item" href="{% url 'IN' %}">Indoor Plants</a>
+                      <a class="dropdown-item" href="#garden">Pools</a>
+                      <a class="dropdown-item" href="#garden">Bird Beeding Place</a>
+                    </div>
+                </li>
+                <!--HOME IMPROVEMENT-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      HOME IMPROV.</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'Skill' %}">Skills & Spacialities</a>
+                      <a class="dropdown-item" href="#homeImprove">Painting</a>
+                      <a class="dropdown-item" href="#homeImprove">Green Improvement</a>
+                      <a class="dropdown-item" href="#homeImprove">Interior Remodel</a>
+                      <a class="dropdown-item" href="#homeImprove">Kitchen Remodel & Repair</a>
+                    </div>
+                </li>
+                <!--CLEAN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      CLEAN</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'Clean' %}">Cleaning</a>
+                      <a class="dropdown-item" href="#clean">Organizing</a>
+                      <a class="dropdown-item" href="#clean">Laundry</a>
+                      <a class="dropdown-item" href="#clean">Pest Control</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pr-3" href="{% url 'About' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="{% url 'Professional' %}">Prof. Reg.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="{% url 'contact' %}">Messages</a>
+                </li>
+                <div class="btn">
+                    <a href="{% url 'logout' %}" style="color:rgb(121, 125, 127)" class="btn palatin-btn">Log out</a>
+                </div>
+                
+                  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <form class="form-inline " action="/action_page.php">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  </nav>  
+              </ul>
+            </div>
+          </nav>    
+    <!--end nav bar-->
+    <!--image slider start-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./static/image/home77.webp" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                   <div class ="row justify content-start text-left">
+                       <div class ="col-lo-8 mx-auto">
+                        <h3>Cataloge of Design</h3>
+                        <h2>30% discount</h2>
+                        <h1>New Membership</h1>
+                        <button class="btn-0 mt-3 ml-2"><a href="{% url 'Trend' %}"> Treand </a></button>
+                       </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./static/image/home6.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                   <div class ="row justify content-start text-left">
+                       <div class ="col-lo-8 mx-auto">
+                        <h3>From Flat to Home</h3>
+                        <h2>Get Ideas !!!</h2>
+                        <h1>Connect with the Professionals</h1>
+                       </div>
+                   </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./static/image/home10.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                   <div class ="row justify content-start text-left">
+                       <div class ="col-lo-8 mx-auto">
+                        <h3>Make Money </h3>
+                        <h4>Share Design</h4>
+                        <button class="btn-0 mt-3 ml-2"><a href="{% url 'add design' %}">Add Design</a></button>
+                       </div>
+                   </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+      <br>
+      <br>
+    <!--image slider end-->
+    <!--img fluid start-->
+    <section class="new bg">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-7 m-auto">
+                    <div class="row text-center">
+                        <div class="col-lg-4">
+                            <img src="./static/image/gif2.gif" class="img-fluid" alt="">
+                            <h6> Redecorate </h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./static/image/gif4.gif" class="img-fluid" alt="">
+                            <h6> Interior </h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./static/image/gif3.gif" class="img-fluid" alt="">
+                            <h6>Garden</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--img fluid end-->
+    <!--Dummy Counter Start-->
+    <section class="counter-up">
+        <div class="content">
+            <div class="box">
+              <div class="icon"><i class="fa fa-users"></i></div>
+              <div class="counter">671</div>
+              <div class="text">Users</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-shopping-cart"></i></div>
+              <div class="counter">309</div>
+              <div class="text">Treand</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-smile-o"></i></div>
+              <div class="counter">536</div>
+              <div class="text">Happy Clients</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-handshake-o"></i></div>
+              <div class="counter">321</div>
+              <div class="text">Shared Design</div>
+            </div>
+          </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+          $('.counter').counterUp({
+            delay: 10,
+            time:1200
+          });
+        });
+        </script>
+    </section> 
+    <!--Dummy counter of-->>
+    <!--DECO start-->
+    <section class="design"  id ="deco">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 class="black"> DECO </h1>
+                    <h6 style="color: rgba(9, 55, 111, 0.74)"> Always Preapare the best for YOU! </h6>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/deco1.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6 > Drawing Room Desing with color. </h6>
+                            <p> From decorating the kitchen to DIYing a firepit, our design inspiration 
+                                and expert tips to home design and decorating can help you make your best 
+                                home. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/deco2.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Desktop or Laptop Desk </h6>
+                            <p> Place to Study or Work </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/deco3.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Private Office Room set-up </h6>
+                            <p> Focus on your work. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/deco4.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Dining Space to Share Every Meal with Your Family </h6>
+                            <p> Contemporary usage. A typical North American dining room will contain 
+                                a table with chairs arranged along the sides and ends of the table, as 
+                                well as other pieces of furniture such as sideboards and china 
+                                cabinets, as space permits. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">Checkout more Design</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--DECO End-->
+    <!--GARDEN start-->
+    <section class="design" id ="garden">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 class="black"> GARDEN </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/garden1.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Flower Plant or any kind of Planting, It Could be a Hobby too </h6>
+                            <p> Plants for Green Lover. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/garden2.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Indoor Plants are Best for any side of your room </h6>
+                            <p> Indoor Plants has it's Own Aura. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/garden3.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Birds Home </h6>
+                            <p> Bird Breeding for Animal Lover. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/garden4.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Pool to Cool. </h6>
+                            <p> Pool is Luxurious On It's Own </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">Checkout more Design</button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--GARDEN end-->
+      <!--HOME IMPROV start-->
+    <section class="design" id="homeImprove">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1  class="black"> Home Improvement </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/homei1.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> TOOLS </h6>
+                            <p> It's Important to get Organiged Tools. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/homei2.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Set Up Your Own Furniture </h6>
+                            <p> When you're making your own Furniture you're creating it with your taste of art. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/homei3.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Be a Professional Building Designer </h6>
+                            <p> It's best to have some experience and learn the craft of building design before you even apply to become 
+                                certified. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/homei4.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Home Repair </h6>
+                            <p> Doing your own home repairs can be satisfying, creative, and fun. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">Checkout more Design</button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Home Improv end-->
+      <!--Cleaning start-->
+    <section class="design" id="clean">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1  class="black"> Cleaning </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/clean1.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Get Rid of Dust Mites in a Mattress </h6>
+                            <p> Dust mites are everywhere in our homes, but they are found in the highest concentrations on surfaces that trap 
+                                dust, like mattresses, curtains, and carpeting that can't be washed regularly. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/clean2.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6>Disinfecting, Sanitizing, and Cleaning{{Item.13.name}} </h6>
+                            <p> Cleaning up the house or any living space is a generic term that means different things to different people. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/clean3.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6>Places You're Forgetting to Clean{{Item.14.name}} </h6>
+                            <p> There's a pile of dirty laundry just waiting to be done; or the kitchen sink is piled with dirty dishes, pots, 
+                                and pans. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/clean4.jpg" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Right Order to Do Chores </h6>
+                            <p> Only when the house is a disaster zone, we have some tips about doing household chores in the right order to make 
+                                the work easier. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">Checkout more Design</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--cleaning end-->
+    <!--what to buy start-->
+    <section class="design" id="toBuy">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1  class="black"> What To Buy </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/buy1.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Chicken Coops </h6>
+                            <p> We independently research, test, review, and recommend the best products—learn more about our process. If you 
+                                buy something through our links, we may earn a commission. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/buy2.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Side and End Tables </h6>
+                            <p> Side and end tables can seamlessly add a pop of color, a touch of elegance, or additional storage to your 
+                                living room or bedroom. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/buy3.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Leaf Rakes, According to a Master Gardener</h6>
+                            <p> Whether gathering fallen leaves, breaking up compacted soil, or leveling mulch or gravel, a top-quality rake 
+                                has many uses. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center my-3">
+                    <div class="card border-0 bg-light mb-2">
+                        <div class="card-body">
+                            <img src="./static/image/buy4.webp" class="img-fluid" alt="">
+                            <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                            <h6> Throw Blankets from Soft to Luxury Options </h6>
+                            <p> Whether you want to snuggle up to read a book or add a pop of color to your couch, nothing beats a stylish, cozy 
+                                throw blanket. </p>
+                            <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">Checkout more Design</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--what to buy end-->
+    
+    <!--our vission start-->
+    <section class="about">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-8 m-auto text-center">
+                    <h1 class="black"> OUR VISION </h1>
+                    <h6 style="color: rgb(70, 11, 98)"> Home should be a place where you can your own space. A safe zone to live with 
+                        your loved ones. </h6>
+                </div>
+            </div>
+                <div class="row py-5">
+                    <div class="col-lg-4 m-auto text-center">
+                        <img src="./static/image/vision1.jpg" class="img-fluid mb-3" alt="">
+                        <h5>Good Environments Great Life</h5>
+                        <h6>We often think that achieving a task is just about getting out there and doing it. We believe that if there's a will, we can find a 
+                            way towards a goal. But our environment dictates what we choose to do, as opposed to what we want to do. If you have choices around 
+                            you that are distracting or lead to undesirable outcomes, then it becomes hard to make the right choices. On the flip side, having 
+                            an environment that only has desirable choices constricts you to do what's important for yourself.</h6>
+                    </div>
+                    <div class="col-lg-4 m-auto text-center">
+                        <img src="./static/image/vision2.jpg" class="img-fluid mb-3" alt="">
+                        <h5>Enjoy Meals Together</h5>
+                        <h6>When a family sits down together, it helps them handle the stresses of daily life and the hassles of 
+                            day-to-day existence. Eating together tends to promote more sensible eating habits, which in turn helps 
+                            family members manage their weight more easily.</h6>
+                    </div>
+                    <div class="col-lg-4 m-auto text-center">
+                        <img src="./static/image/vision3.jpg" class="img-fluid mb-3" alt="">
+                        <h5>Planting Together</h5>
+                        <h6>Planting a family tree doesn't just help your child connect with nature, but it's a great way to help the 
+                            environment and local wildlife too. And better yet, it's the perfect excuse for the whole family to get 
+                            outside and bond without screens. It also helps children improve their responsibility and develop a deep 
+                            sense of achievement as they see the tree growing taller and stronger.</h6>
+                    </div>
+                </div>
+            <div class="row pt-3">
+                <div class="col-lg-6 text-center m-auto">
+                    <button class="btn1">For More Info.</button>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!--our vission end-->
+    <!--registration start-->
+    <section class="purple py-5">
+        <div class="container text-white py-5">
+            <div class="row py-5">
+                <div class="col-lg-6 ">
+                    <h1 class="font-weight-bold py-3"> It's easy to Build a House. But when it matches with your dream then we call it a HOME </h1>
+                    <h6 style="color: rgb(188, 215, 238);"> Register TO Share Your Work </h6>
+                   <a href ="{% url 'Professional' %}"><button class="btn1 mt-3"> Register </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--registration end-->
+    <!--contect us start-->
+    <section class="contact py-5" id="us">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 class="black"> Contact US! </h1>
+                    <h6 style="color: rgb(157, 108, 178)"> Always be in touch with us. </h6>
+                </div>
+            </div>
+                <div class="row py-5">
+                    <div class="col-lg-9 m-auto">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h6> LOCATION </h6>
+                                <p> Framget-1250, Dhaka, Bangladesh. </p>
+                            
+                                <h6> PHONE </h6>
+                                <p> 01743689624 </p>
+                            
+                                <h6> EMAIL </h6>
+                                <p> eInterior007@gmail.com </p>
+                            </div>
+                            <form action="" method="POST"> <!-- </form> onsubmit="sendEmail(); reset(); return false;"> -->
+                                {% csrf_token %}
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input name = "flname" type="text" class="form-control bg-light" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input name = "phname" type="text" class="form-control bg-light" placeholder="Phone Number" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 py-3">
+                                            <input name = "ceml" type="email" class="form-control bg-light" placeholder="Enter Email" id="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 py-3">
+                                            <textarea name = "mess" type="text" class="form-control bg-light" placeholder="What do you want to say?" id="" cols="10" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn1 mt-3" type="submit"> Submit </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+     <!--contect us end-->
+     <!--join start-->
+    <section class="news py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1 class ="join" style="color: rgb(171, 218, 237)"> Join Our Colorful World </h1>
+                    <input type="text" class="px-3" placeholder="Enter Your Email.">
+                    <button class="btn2"> Submit </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11">
+                    <div class="row"> 
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> CUSTOMER CARE </h5>
+                            <p > Regular </p>
+                            <p> On Time </p>
+                            <p > Always Care </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> FAQ's </h5>
+                            <p> No E-charges </p>
+                            <p> Advising & Information </p>
+                            <p> Always Care </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> OUR COMPENT </h5>
+                            <p> About </p>
+                            <p> New Design </p>
+                            <p> Design </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> SOCIAL MEDIA </h5>
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><i class="fab fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <hr>
+            <p class="text-center" style="color: rgb(18, 4, 20)"> Copyright ©2022 Focus on University Projrct, UAP. All Rights Reserved.</p>
+        </div>
+    </section>
+     <!--join end-->
+     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : 'eInterior007@gmail.com',
+                Password : "E-Interior#007",
+                To : 'eInterior007@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Equary from User",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+            
+        }
+     </script> -->
+    </body>
+</html>

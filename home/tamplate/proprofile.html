@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang ="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <head>
+        <!-- Required meta tags -->
+          <title> Professional Profile </title>
+          <meta charset="utf-8">
+          <link rel ="stylesheet" href="{% static 'css/professional.css' %} ">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@1,300&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+        <!--font link-->
+          <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda+One&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <body class ="bg">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand py-2" href="#" style="font-family: 'Merienda', cursive;">
+            <i class="fa fa-pagelines" style="color: rgb(170, 196, 219);padding-top: 7px; font-size: 30px;"></i> <a class="navbar-brand" href="#" style="font-family: 'Merienda', cursive;">eInterior</a></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="{% url 'Home' %}" style=" font-family: 'Alata', sans-serif;">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link pr-3 " href="#"style=" font-family: 'Alata', sans-serif;">About Us</a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+            <!--<body style="min-height: 200px; background-image: url('./static/last1.jpg'); background-size: cover;">-->
+            <div class="container card-0 justify-content-center "> 
+                <div class="card-body px-sm-4 px-0"> 
+                    <div class="row justify-content-center mb-5"> 
+                        <div class="col-md-10 col"> 
+                            <h3 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-center" style="color: rgba(87, 9, 111, 0.74)"> Professional Interior Designer </h3> 
+                            <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-center" style="color: rgba(10, 5, 12, 0.74)"> Interior design is the art and science of 
+                            enhancing the interior of a building to achieve a healthier and more aesthetically pleasing 
+                            environment for the people using the space. An interior designer is someone who plans, researches, 
+                            coordinates, and manages such enhancement projects. Interior design is a multifaceted profession 
+                            that includes conceptual development, space planning, site inspections, programming, research, 
+                            communicating with the stakeholders of a project, construction management, and execution of the 
+                            design.</p> 
+                        </div> 
+                    </div> 
+                    <form action="/" method="POST">
+                    <div class="row justify-content-center round"> 
+                        <div class="col-lg-10 col-md-12 "> 
+                            <div class="card shadow-lg card-1"> 
+                                <div class="card-body inner-card"> 
+                                    <div class="row justify-content-center"> 
+                                        <div class="col-lg-5 col-md-6 col-sm-12">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <label for="first-name">First Name</label>
+                                                <input name="pffname" type="text" class="form-control" id="first-name" placeholder="Type your Name"> 
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <label for="Mobile-Number">Mobile Number</label> 
+                                                <input name="pfphnum" type="text" class="form-control" id="Mobile-Number" placeholder="Phone Number"> 
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <label for="inputEmail4">Project Type</label>
+                                                <input name="pfpt" type="text" class="form-control" id="Mobile-Number" placeholder="Project Type"> 
+                                            </div> 
+                                                <div class="form-group">
+                                                    <label for="time">Maximum time for the project</label>
+                                                    <input name="pft" type="text" class="form-control" id="time" placeholder="Time needed"> 
+                                                </div> 
+                                            <div class="form-group">
+                                                <label for="skill">Required Skills</label> 
+                                                <input name="pfs" type="text" class="form-control" id="skill" placeholder="Skills">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-5 col-md-6 col-sm-12"> 
+                                            <div class="form-group"> 
+                                                <label for="last-name">Last Name</label> 
+                                                <input name="pflname" type="text" class="form-control" id="last-name" placeholder="Last Name"> 
+                                            </div> 
+                                            <div class="form-group">
+                                                <label for="phone">Email</label> 
+                                                <input name="pfeml" type="email" class="form-control" id="email" placeholder="Email">
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <label for="Evaluate Budget">Evaluate Budget</label> 
+                                                <input name="pfb" type="text" class="form-control" id="Evaluate Budget" placeholder="Budget">
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <label for="Company-Name">Company Name</label>
+                                                <input name="pfc" type="text" class="form-control" id="Company-Name" placeholder="Company Name"> 
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <label for="inputEmail4">Country</label>
+                                                <input name="pfct" type="text" class="form-control" id="Company-Name" placeholder="Country">
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="row justify-content-center"> 
+                                        <div class="col-md-12 col-lg-10 col-12">
+                                            <div class="row">
+                                                <div class="col-lg-6 text-center m-auto">
+                                                    <button class="btn2" type="submit"><a href="{% url 'Home' %}">Save Profile Info.</a></button>
+                                                </div>
+                                            </div>
+                                       </div> 
+                                    </div> 
+                            </div> 
+                        </div>
+                    </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>

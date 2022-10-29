@@ -1,0 +1,366 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel ="stylesheet" href="{% static 'css/trend.css' %} ">
+    <!-- <link rel = "stylesheet" href="trend.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda+One&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- links for trend  -->
+ <!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  </head>
+  <body class ="bg" >
+     <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand py-2" href="#" style="font-family: 'Merienda', cursive;">
+            <i class="fa fa-pagelines" style="color: aliceblue;padding-top: 7px; font-size: 30px;"></i> <a class="navbar-brand" href="#" style="font-family: 'Merienda', cursive;">eInterior</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="{% url 'Home' %}" style=" font-family: 'Alata', sans-serif;">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link pr-3 " href="{% url 'About' %}" style=" font-family: 'Alata', sans-serif;">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <!-- nav end -->
+
+   <!-- trend page start -->
+   <div class="container py-5">
+    <!-- For Demo Purpose-->
+    <header class="text-center mb-5">
+      <h1 class="display-4 font-weight-bold">Trendings</h1>
+      <p class="font-italic fw-bold text-light mb-0">Furniture is meant to be used and enjoyed.</p>
+    </header>
+  
+  
+    <!-- First Row [Prosucts]-->
+    
+  
+    <div class="row pb-5 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-1"><img src="/static/image/1.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+            <h4 class="text-dark font-weight-bold ">6 Signs It's Time to Get New a Couch</h4>
+            <h6 class="text-dark font-weight-bold ">Ratings</h6>
+            <ul class="list-inline small">
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-1"><img src="/static/image/2.webp" alt="" class="img-fluid d-block mx-auto mb-3">
+            <h5 class="text-dark font-weight-bold ">10 Spooky Halloween Decorations to Order on Amazon ASAP</h5>
+            <p class="text-dark font-weight-bold">Ratings</p>
+            <ul class="list-inline small">
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-1"><img src="/static/image/3.webp" alt="" class="img-fluid d-block mx-auto mb-3">
+            <h5 class="text-dark font-weight-bold "> We're Sharing the Blueprint for Perfect Pantry Organization
+            </h5>
+            <p class="text-dark font-weight-bold">Ratings.</p>
+            <ul class="list-inline small">
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-1"><img src="/static/image/4.webp" alt="" class="img-fluid d-block mx-auto mb-3">
+            <h5 class="text-dark font-weight-bold ">Goofy Ghosts Are the Only 2022 Halloween Decor You Need</h5>
+            <p class="text-dark font-weight-bold">Ratings</p>
+            <ul class="list-inline small">
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+              <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <!-- Second Row [Team]-->
+    <!-- <h2 class="font-weight-bold mb-2">Our Team</h2> -->
+    <!-- <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
+  
+    <div class="row pb-5 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-1"><img src="/static/image/5.webp" alt="" class="w-100 card-img-top">
+            <div class="p-4">
+              <h5 class="text-dark font-weight-bold ">Here's How to Fake a Clean Bedroom in Just a Few Simple Steps</h5>
+              <p class="text-dark font-weight-bold">Ratings</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-1"><img src="/static/image/6.webp" alt="" class="w-100 card-img-top">
+            <div class="p-4">
+              <h5 class="text-dark font-weight-bold ">Why Neutrals Can Still Be Exciting, Says a Designer</h5>
+              <p class="text-dark font-weight-bold">Ratings</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-1"><img src="/static/image/7.webp" alt="" class="w-100 card-img-top">
+            <div class="p-4">
+              <h5 class="text-dark font-weight-bold ">Why Neutrals Can Still Be Exciting, Says a Designer</h5>
+              <p class="text-dark font-weight-bold">Ratings</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-1"><img src="/static/image/8.webp" alt="" class="w-100 card-img-top">
+            <div class="p-4">
+              <h5 class="text-dark font-weight-bold ">“Deco-vating” Is the Easiest Way to Make Your Dream Home a Reality</h5>
+              <p class="text-dark font-weight-bold">Ratings</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Third Row [Profiles]-->
+    
+    <h2 class="font-weight-bold mb-2" style="text-align: center;">Our top Designers</h2>
+  <section>
+    <p class="font-italic fw-bold text-light mb-2">Every great design begins with an even better story.</p></section><br><br>
+  
+  
+    <div class="row pb-5 mb-4">
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-0">
+            <div class="bg-secondary px-5 py-4 text-center card-img-top"><img src="/static/image/d1.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+              <h5 class="text-white mb-0">Sumaiya Bhumeka</h5>
+              <p class="small text-white mb-0">Backend Developer.</p>
+            </div>
+            <div class="p-4 d-flex justify-content-center">
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-0">
+            <div class="bg-danger px-5 py-4 text-center card-img-top"><img src="/static/image/d3.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+              <h5 class="text-white mb-0">Alifun Nahar</h5>
+              <p class="small text-white mb-0">Interior decorator.</p>
+            </div>
+            <div class="p-4 d-flex justify-content-center">
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-0">
+            <div class="bg-info px-5 py-4 text-center card-img-top"><img src="/static/image/d2.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+              <h5 class="text-white mb-0">Nishat Tasnim Tanah</h5>
+              <p class="small text-white mb-0">Corporate interior designer.</p>
+            </div>
+            <div class="p-4 d-flex justify-content-center">
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-0">
+            <div class="bg-warning px-5 py-4 text-center card-img-top"><img src="/static/image/d5.png" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+              <h5 class="text-white mb-0">The Spruce</h5>
+              <p class="small text-white mb-0">Website we followed.</p>
+            </div>
+            <div class="p-4 d-flex justify-content-center">
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section  class="col-lg-9 m-auto text-center last">
+    <div class="col-lg-11">
+              <div class="row"> 
+                  <div class="col-lg-3 py-3">
+                      <h5 class="pb-3"> CUSTOMER CARE </h5>
+                      <p  > Regular </p>
+                      <p> On Time </p>
+                      <p > Always Care </p>
+                  </div>
+                  <div class="col-lg-3 py-3">
+                      <h5 class="pb-3"> FAQ's </h5>
+                      <p> No E-charges </p>
+                      <p> Advising & Information </p>
+                      <p> Always Care </p>
+                  </div>
+                  <div class="col-lg-3 py-3">
+                      <h5 class="pb-3"> OUR COMPENT </h5>
+                      <p> About </p>
+                      <p> New Design </p>
+                      <p> Design </p>
+                  </div>
+                  <div class="col-lg-3 py-3">
+                      <h5 class="pb-3"> SOCIAL MEDIA </h5>
+                      <span><i class="fa fa-facebook"  style="font-size:30px;"></i></span>
+                      <span><i class="fa fa-instagram" style="font-size:30px" ></i></span>
+                      <span><i class="fa fa-twitter" style="font-size:30px" ></i></i></span>
+                      <span><i class="fa fa-google" style="font-size:30px"></i></span>
+                  </div>
+                  <hr>
+      <p class="text-center" style="color: rgba(0, 0, 0, 0.512)"> Copyright ©2022 Focus on eInterior. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div> 
+  </div>
+</section>
+   <!-- trend page end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+  </body>
+</html>
