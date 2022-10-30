@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Design Style</title>
+        <meta charset="utf-8">
+        <!--link with Css-->
+        <link rel="stylesheet" href="{% static 'css/index.css' %} ">
+        <!--Employ Form link-->
+        <!--End link with Css-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merienda+One&family=Merienda:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lobster+Two:ital@1&family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Londrina+Solid:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Italianno&display=swap" rel="stylesheet">
+        <!--Bootstrap Links-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: rgba(203, 250, 228, 0.692);">
+        <!--Nav bar start-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand py-2" href="#">
+                <i class="fab fa-pagelines"style="color:white"></i>
+                eInterior
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link pr-3" href="{% url 'Home' %}">Home</a>
+                </li>
+                <!--DECO-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      DECO</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'Room Design' %}">Room Design</a>
+                      <a class="dropdown-item" href="{% url 'Decorate' %}">Decorating</a>
+                      <a class="dropdown-item" href="{% url 'Style' %}">Design Style</a>
+                      <a class="dropdown-item" href="#deco">Small Space</a>
+                    </div>
+                </li>
+                <!--GARDEN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      GARDEN</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'plants a to z' %}">Plants A to Z</a>
+                      <a class="dropdown-item" href="#garden">Outdoor Plants</a>
+                      <a class="dropdown-item" href="#garden">Indoor Plants</a>
+                      <a class="dropdown-item" href="#garden">Pools</a>
+                      <a class="dropdown-item" href="#garden">Bird Beeding Place</a>
+                    </div>
+                </li>
+                <!--HOME IMPROVEMENT-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      HOME IMPROV.</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#homeImprove">Skills & Spacialities</a>
+                      <a class="dropdown-item" href="#homeImprove">Painting</a>
+                      <a class="dropdown-item" href="#homeImprove">Green Improvement</a>
+                      <a class="dropdown-item" href="#homeImprove">Interior Remodel</a>
+                      <a class="dropdown-item" href="#homeImprove">Kitchen Remodel & Repair</a>
+                    </div>
+                </li>
+                <!--CLEAN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbardrop" data-toggle="dropdown">
+                      CLEAN</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#clean">Cleaning</a>
+                      <a class="dropdown-item" href="#clean">Organizing</a>
+                      <a class="dropdown-item" href="#clean">Laundry</a>
+                      <a class="dropdown-item" href="#clean">Pest Control</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pr-3" href="{% url 'About' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="{% url 'Professional' %}">Prof. Reg.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" href="#us">Contact Us</a>
+                </li>
+                <li>
+                    <div class="btn">
+                        <a href="{% url 'logout' %}" style="color:rgb(121, 125, 127)" class="btn palatin-btn">Log out</a>
+                    </div>
+                </li>
+                
+                  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <form class="form-inline " action="/action_page.php">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  </nav>  
+              </ul>
+            </div>
+          </nav>    
+    <!--end nav bar-->
+
+    <!--DECO start-->
+    <section class="design"  id ="deco">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 class="black"> DECO </h1>
+                    <h6 style="color: rgba(9, 55, 111, 0.74)"> Always Preapare the best for YOU! </h6>
+                </div>
+            </div>
+            
+            <!--Room Design start-->
+            <section class="design"  id ="roomDesign">
+                <div class="container py-5">
+                    <div class="row pt-5">
+                        <div class="col-lg-5 m-auto text-center">
+                            <h1 class="black"> Design Style </h1>
+                            <h6 style="color: rgba(9, 55, 111, 0.74)"> Learn the difference between modern and contemporary design, coastal and nautical style, and many more design styles with our comprehensive expert guides.</h6>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-3 text-center my-3">
+                            <div class="card border-0 bg-light mb-2">
+                                <div class="card-body">
+                                    <img src="./static/image/D1.webp" class="img-fluid" alt="">
+                                    <hr> <button tpye="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                                    <h6> What Is Retro Design? </h6>
+                                    <p> Retro style is making a major comeback and is especially popular among millennials. We spoke with designers who reflected 
+                                        on the style's origins and key elements and also offered advice for those looking to incorporate retro pieces into their 
+                                        own homes. The key? Not going overboard with retro items and mixing and matching finds from other eras, too. </p>
+                                    <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-lg-3 text-center my-3">
+                            <div class="card border-0 bg-light mb-2">
+                                <div class="card-body">
+                                    <img src="./static/image/D2.webp" class="img-fluid" alt="">
+                                    <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                                    <h6> What Is a Vintage Aesthetic and How to Decorate In It </h6>
+                                    <p> Curious about incorporating vintage pieces into your home but don't know quite where to begin? This guide is for you. 
+                                        Here, we cover the nuts and bolts of what exactly makes a piece vintage; then, experts break down the best places to 
+                                        score amazing secondhand pieces, share tips on key features to look for when vintage shopping, and provide guidance on 
+                                        how you can successfully incorporate your finds into your home. </p>
+                                    <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center my-3">
+                            <div class="card border-0 bg-light mb-2">
+                                <div class="card-body">
+                                    <img src="./static/image/D3.webp" class="img-fluid" alt="">
+                                    <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                                    <h6> 11 Gothic Decor Ideas That Are Classy and Dramatic </h6>
+                                    <p> When you hear the term Gothic decor, what comes to mind? For most of us, it's something along the lines of an all-black, 
+                                        macabre look that comes packed with animal bones, feathers, and various other witchy elements.The dramatics that come 
+                                        along with gothic or gothcore design instantly add a touch of offbeat opulence and historical relevance to your space. 
+                                        The origins of Gothic design began with dramatic Christian cathedrals and European castles, after all. </p>
+                                    <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center my-3">
+                            <div class="card border-0 bg-light mb-2">
+                                <div class="card-body">
+                                    <img src="./static/image/D4.webp" class="img-fluid" alt="">
+                                    <hr> <button type="button" class="btn btn-outline-danger fas fa-thumbs-up "></i></button><hr>
+                                    <h6> How to Do Victorian Interior Decor the Sophisticated Way </h6>
+                                    <p> Ornate brass mirrors, upholstered settees, and glistening chandeliers are all key elements of Victorian interior design 
+                                        that remain popular in today's homes. However, while decorating in the Victorian style, it can oftentimes be difficult 
+                                        to ensure that one's space retains a contemporary aesthetic while paying homage to this magnificent era. After all, too 
+                                        many antique pieces can accidentally convey a stuffy, dated feel, which should be avoided at all costs. </p>
+                                    <!--<button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i></button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-center m-auto">
+                            <button class="btn1">Checkout more Design</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Room Design end-->
+            
+        </div>
+    </section>
+    <!--DECO End-->
+    <!--registration start-->
+    <section class="purple py-5">
+        <div class="container text-white py-5">
+            <div class="row py-5">
+                <div class="col-lg-6 ">
+                    <h1 class="font-weight-bold py-3"> It's easy to Build a House. But when it matches with your dream then we call it a HOME </h1>
+                    <h6 style="color: rgb(188, 215, 238);"> Register TO Share Your Work </h6>
+                   <a href ="{% url 'Professional' %}"><button class="btn1 mt-3"> Register </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--registration end-->
+    <!--contect us start-->
+    <section class="contact py-5" id="us">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 class="black"> Contact US! </h1>
+                    <h6 style="color: rgb(157, 108, 178)"> Always be in touch with us. </h6>
+                </div>
+            </div>
+                <div class="row py-5">
+                    <div class="col-lg-9 m-auto">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h6> LOCATION </h6>
+                                <p> Framget-1250, Dhaka, Bangladesh. </p>
+                            
+                                <h6> PHONE </h6>
+                                <p> 01743689624 </p>
+                            
+                                <h6> EMAIL </h6>
+                                <p> eInterior007@gmail.com </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control bg-light" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control bg-light" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 py-3">
+                                        <textarea name="text" class="form-control bg-light" placeholder="What do you want to say?" id="" cols="10" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn1 mt-3"> Submit </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+     <!--contect us end-->
+     <!--join start-->
+    <section class="news py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1 class ="join" style="color: rgb(171, 218, 237)"> Join Our Colorful World </h1>
+                    <input type="text" class="px-3" placeholder="Enter Your Email.">
+                    <button class="btn2"> Submit </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11">
+                    <div class="row"> 
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> CUSTOMER CARE </h5>
+                            <p > Regular </p>
+                            <p> On Time </p>
+                            <p > Always Care </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> FAQ's </h5>
+                            <p> No E-charges </p>
+                            <p> Advising & Information </p>
+                            <p> Always Care </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> OUR COMPENT </h5>
+                            <p> About </p>
+                            <p> New Design </p>
+                            <p> Design </p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3"> SOCIAL MEDIA </h5>
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><i class="fab fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <hr>
+            <p class="text-center" style="color: rgb(14, 2, 15)"> Copyright ©2022 Focus on University Projrct, UAP. All Rights Reserved.</p>
+        </div>
+    </section>
+     <!--join end-->
+
+     <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+    </body>
+</html>
